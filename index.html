@@ -61,10 +61,10 @@ $(window).load(function() {
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">How to...</a>
+              <a class="nav-link" href="how to.html">How to...</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">contacts</a>
+              <a class="nav-link" href="#footer">contacts</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -88,7 +88,7 @@ $(window).load(function() {
   
   
 
-    <section class="main-image" style="margin-top:  -25%; ">
+    <section class="main-image" style="margin-top:  20%; ">
       <img src="images\taylor-hernandez-NK-N6coeI5Y-unsplash.jpg" alt="Main Image">
       <div class="caption">
         <div class="title">ITS ALL ABOUT MENTAL HEALTH</span></div>
@@ -242,7 +242,7 @@ $(window).load(function() {
 
 
 
-  <div id="carouselExampleFade" class="carousel slide carousel-fade" style="height: 40%; width: 40%; margin-left: 65%; ">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" style="height: 30%; width: 30%; border-radius: 10%; margin-left: 65%; margin-top: 10%; ">
     
     <div class="carousel-inner">
       
@@ -287,8 +287,13 @@ $(window).load(function() {
 
 
 
+
+
+
+
+
 <section style="margin-top: 20;">
-<footer style="width: 100vw; margin-top: 20%;" >
+<footer id="footer" style="width: 100vw; margin-top: 20%;" >
   <div class="container" >
 
       <div class="footer-links">
@@ -296,30 +301,56 @@ $(window).load(function() {
           <div class="footer-column">
               <h3 style="font-size: 11px; font-style: italic;">Customer Service</h3>
               <ul>
-                  <li><a href="#">Help Center</a></li>
-                  <li><a href="#">Returns</a></li>
-                  <li><a href="#">Shipping</a></li>
+                  <li><a href="#" onclick="openModal()">Help Center</a></li>
+                  <li><a href="navbar navbar-expand-lg bg-body-tertiary">Home</a></li>
+                  <li><a href="how to.html">How to</a></li>
                   <li><a href="#">FAQs</a></li>
               </ul>
           </div>
+
+ <div id="myModal" class="modal">
+       
+        <div class="modal-content" >
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 style="font-weight: bolder; color: crimson;">Call Hotline</h2>
+            <p style="font-size: 12px; font-weight: bold; color: aqua;">For immediate assistance, call:</p>
+            <p style="font-size: 12px;font-weight: bold; color: darkblue;">Hotline 1: <a href="#">+25419453356</a></p>
+            <p style="font-size: 12px;font-weight: bold; color: darkblue;">Hotline 2: <a href="#">+254731757985</a></p>
+        </div>
+    </div>
+
+          
           <div class="footer-column">
-              <h3 style="font-size: 11px; font-style: italic;">Visit Our Store</h3>
-              <p>1234 Market St, San Francisco, CA 94103</p>
-              <p>(555) 555-5555</p>
+              <h3 style="font-size: 11px; font-style: italic;">Visit Our Offices</h3>
+              <p>Temple Road, Nairobi,postal code 00010</p>
+              <p>(254) 71-9453356</p>
           </div>
           <div class="footer-column">
               <h3 style="font-size: 11px; font-style: italic;">Connect With Us</h3>
               <div class="social-icons">
-                  <a href="#">Facebook</a>
-                  <a href="#">Instagram</a>
-                  <a href="#">Twitter</a>
+                  <a href="#">Facebook:<span style="display: block;"> mind_love#254</span></a>
+                  <a href="#">Instagram:<span style="display: block;"> mind_love#254</span></a>
+                  <a href="#">Twitter:<span style="display: block;"> mind_love#254</span></a>
               </div>
           </div>
       </div>
   </div>
 </footer>
 </section>
-  
+  <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Function to open the modal
+        function openModal() {
+            modal.style.display = "block";
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+    </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="script.js"></script>
  
