@@ -107,7 +107,10 @@ $(window).load(function() {
             class="item"
             src="images\Fl Alcohol and Drug Addiction Treatment Rehab.jpg"
             />
-            <a href="#">ALCOHOL ADDICTION</a>
+            <div class="card" style="height: 23%; width: 75%;">
+              <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Alcohol Addiction</p>
+               <a style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic;"  href="alcohol.html">Read more</a>
+            </div>
           </div>
 
           <div>
@@ -115,7 +118,10 @@ $(window).load(function() {
             src="images\Photographer Lee Jeffries uncovers human face of drug addiction.jpg"
             class="item"
           />
-          <a href="#">DRUG ADDICTION</a>
+          <div class="card" style="height: 23%; width: 75%;">
+              <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Drug Addiction</p>
+               <a style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic;"  href="drug.html">Read more</a>
+            </div>
           </div>
 
           <div>
@@ -123,7 +129,10 @@ $(window).load(function() {
             src="images\The Neurological Gamble_ Unraveling the Impact of Gambling on Your Brain.jpg"
             class="item"
           />
-          <a href="#">GAMBLING ADDICTION</a>
+          <div class="card" style="height: 23%; width: 75%;">
+              <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Gambling Addiction</p>
+               <a style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic;"  href="gamble.html">Read more</a>
+            </div>>
         </div>
 
           <div>
@@ -131,7 +140,10 @@ $(window).load(function() {
             src="images\porn-addiction.jpeg"
             class="item"
           />
-          <a href="#">PORN ADDICTION</a>
+         <div class="card" style="height: 23%; width: 75%;">
+              <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Porn Addiction</p>
+               <a style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic;"  href="por.html">Read more</a>
+            </div>
         </div>
 
           <div>
@@ -139,7 +151,10 @@ $(window).load(function() {
             src="images\Child Addiction to Video Games _ Empowering Parents.jpg"
             class="item"
           />
-          <a href="#">VIDEO GAME ADDICTION</a>
+         <div class="card" style="height: 23%; width: 85%;">
+              <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Video Game Addiction</p>
+               <a style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic;"  href="video.html">Read more</a>
+            </div>
         </div>
 
           <div>
@@ -148,7 +163,10 @@ $(window).load(function() {
             class="item"
             
           />
-          <a href="#">CELL PHONE ADDICTION</a>
+          <div class="card" style="height: 23%; width: 75%;">
+              <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Cell Phone Addiction</p>
+               <a style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-style: italic;"  href="cell.html">Read more</a>
+            </div>
         </div>
 
           
@@ -302,9 +320,9 @@ $(window).load(function() {
               <h3 style="font-size: 11px; font-style: italic;">Customer Service</h3>
               <ul>
                   <li><a href="#" onclick="openModal()">Help Center</a></li>
-                  <li><a href="navbar navbar-expand-lg bg-body-tertiary">Home</a></li>
+                  <li><a href="#">Home</a></li>
                   <li><a href="how to.html">How to</a></li>
-                  <li><a href="#">FAQs</a></li>
+                 
               </ul>
           </div>
 
@@ -318,6 +336,57 @@ $(window).load(function() {
             <p style="font-size: 12px;font-weight: bold; color: darkblue;">Hotline 2: <a href="#">+254731757985</a></p>
         </div>
     </div>
+
+
+
+
+<button style="background-color: black; border-radius: 10%; box-shadow: 5%; width: 10%;" onclick="openForm()">BOOK APPOINTMENT</button>
+
+<!-- Form overlay -->
+<div class="overlay" id="formOverlay">
+    <div class="form-container">
+        <h2>Enter Your Details</h2>
+        <form id="userForm" action="#" method="post">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <br>
+            <input type="tel" id="mobile" name="mobile" placeholder="Your Mobile Number" required>
+            <br>
+            <input type="text" style="color: black;" id="location" name="location" placeholder="Your Location" required>
+            <br>
+            <select id="gender" style="color: black;" name="gender" required>
+              <option value="" disabled selected style="color: black;">Select Your Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+                <option value="prefer_not_to_say">Prefer not to say</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+
+<script>
+    
+    function openForm() {
+        document.getElementById("formOverlay").style.display = "flex"; 
+    }
+
+   
+    document.getElementById("userForm").addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        document.getElementById("formOverlay").style.display = "none"; // Hide the overla
+    });
+
+    
+    window.onload = function() {
+        document.getElementById("formOverlay").style.display = "none";
+    }
+</script>
+
+
 
           
           <div class="footer-column">
